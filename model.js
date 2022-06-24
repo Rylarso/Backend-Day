@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const animalSchema = mongoose.schema({
+const animalSchema = mongoose.Schema({
     species: { type: String, default: "" },
     location: { type: String, default: "" },
     color: { type: String, default: "" },

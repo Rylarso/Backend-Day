@@ -13,4 +13,4 @@ module.exports = {
     flags,
     dotenv,
     port
-}
+};

@@ -1,13 +1,11 @@
-//express set up
-const express = require("express");
-const app = express();
-app.use(express.json());
+//get mongodb
+const mongodb = require("./mongodb");
 
 //get configuerations 
 const config = require("./config");
 
-//get mongodb
-const mongodb = require("./mongodb")
+//get server running
+const app = require("./server-methods");
 
 mongodb.setUpConnectionHandlers(() => {
     app.listen(config.port, () => {
