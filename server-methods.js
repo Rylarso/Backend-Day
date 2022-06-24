@@ -11,5 +11,18 @@ const config = require("./config");
 
 app.post("/animal", (res, req) => {
     console.log("Post Triggered");
-    res.json(animal);
 });
+
+app.get("/animal", (res, req) => {
+    console.log("Get Triggered");
+});
+
+app.put("/animal", (res, req) => {
+    console.log("Put Triggered");
+});
+
+app.patch("/animal", (res, req) => {
+    console.log("Patch Triggered");
+});
+
+module.exports = app;

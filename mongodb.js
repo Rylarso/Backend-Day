@@ -25,6 +25,7 @@ function setUpConnectionHandlers(callback) {
     //open
     db.once("open", () => {
         console.log("Opened Mongodb");
+        callback();
     });
 
     //error
@@ -34,6 +35,6 @@ function setUpConnectionHandlers(callback) {
 }
 
 module.exports = {
-    connect,
     setUpConnectionHandlers,
+    connect
 };

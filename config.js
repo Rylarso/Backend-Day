@@ -7,7 +7,7 @@ flags.parse();
 const dotenv = require("dotenv");
 
 //configure port number
-const port = flags.get("port");
+const port = flags.get("port") || process.env.port || 8080;
 
 module.exports = {
     flags,
