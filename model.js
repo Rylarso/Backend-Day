@@ -5,7 +5,7 @@ const animalSchema = mongoose.schema({
     location: { type: String, default: "" },
     color: { type: String, default: "" },
     index: { type: String, default: "" },
-    date: { type: String, default: "" },
+    date: { type: Date, default: new Date() },
 });
 
 const animal = mongoose.model("Animal", animalSchema);
