@@ -12,19 +12,16 @@ const config = require("./config");
 //add methods
 const methods = require("./methods");
 
-//add setup
-const setup = require("./setup");
-
 app.post("/animal", (res, req) => {
-    const vAnimal = setupAnimal(req.body);
-    Animal.create(vAnimal)
-        .then((animal) => {
-            res.json(Aodo);
-            console.log("Post Triggered");
-        })
-        .catch((err) => {
-            res.status(500).json(err);
-        });
+    // const vAnimal = setupAnimal(req.body);
+    // Animal.create(vAnimal)
+    //     .then((animal) => {
+    res.json(Animal.animal);
+    console.log("Post Triggered");
+    // })
+    // .catch((err) => {
+    //     res.status(500).json(err);
+    // });
 });
 
 app.get("/animal", (res, req) => {

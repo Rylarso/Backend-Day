@@ -1,7 +1,7 @@
 setupAnimal = function (animalData) {
     let discovery = new Date();
     // check deadline and make sure its good
-    if (animalData.deadline) {
+    if (animalData.discovery) {
         discovery = new Date(animalData.discovery);
     }
     // set defaults for eveything else
